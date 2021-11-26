@@ -1,6 +1,6 @@
 function menuPage(){
   const menu = document.createElement('div');
- 
+  menu.classList.add('page') 
   menu.appendChild(createParagraph('Chicken Adobo: $14'))
   menu.appendChild(createParagraph('Chicken Nilaga: $15'))
   menu.appendChild(createParagraph('Pork Adobo: $16'))

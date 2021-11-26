@@ -2,7 +2,7 @@
 function navBar(){
   const navbar = document.createElement('nav')
   navbar.id = 'navbar';
-
+  
   navbar.appendChild(navButton('Home'))
   navbar.appendChild(navButton('Contact'))  
   navbar.appendChild(navButton('Menu'))

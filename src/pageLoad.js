@@ -2,7 +2,7 @@ export default function createHome(){
   const home =  document.createElement('div')
   const header = document.createElement('h1')
   header.textContent = 'generic restaurant'
-  
+  home.classList.add('page')  
   let image = document.createElement('img')
   image.src = "https://static5.depositphotos.com/1003434/514/i/950/depositphotos_5147838-stock-photo-attractive-smiling-cook.jpg"
   image.alt = 'chef do be smiling doe'
