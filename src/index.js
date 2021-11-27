@@ -15,22 +15,26 @@ function childRemover() {
   }
 }
 
+// try to seperate dom shit from logic components (apparently this good)
+function childAppender(newPage){ //appends new page to current page
+  content.appendChild(navBar())
+  content.appendChild(newPage)
+}
+
+
 function pageSwitcher(navId) {
   if (navId.id === 'home') {
-    console.log('home was switched to');
+    console.log('home was switched tomy penis');
     childRemover();
-    content.appendChild(navBar());
-    content.appendChild(createHome());
+    childAppender(createHome())
   } else if (navId.id === 'menu') {
     console.log('menu was switched to');
     childRemover();
-    content.appendChild(navBar());
-    content.appendChild(menuPage());
+    childAppender(menuPage())
   } else if (navId.id === 'contact') {
     console.log('contact was switched to');
     childRemover();
-    content.appendChild(navBar());
-    content.appendChild(contactPage());
+    childAppender(contactPage())
   }
 }
 
@@ -45,3 +49,4 @@ function doStuff() {
 }
 
 doStuff()
+
