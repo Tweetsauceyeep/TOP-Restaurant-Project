@@ -9,19 +9,20 @@ const navigationBar = document.getElementsByClassName('navbarButton');
 content.appendChild(navBar());
 content.appendChild(createHome());
 
-function childRemover() {
+// helper functions to clean up code
+function childRemover() { // removes children from content div
   while (content.firstChild) {
     content.removeChild(content.firstChild);
   }
 }
 
-// try to seperate dom shit from logic components (apparently this good)
+// try to seperate dom  from logic components (apparently this good)
 function childAppender(newPage){ //appends new page to current page
   content.appendChild(navBar())
   content.appendChild(newPage)
 }
 
-
+// logic for switching pages
 function pageSwitcher(navId) {
   if (navId.id === 'home') {
     console.log('home was switched tomy penis');
